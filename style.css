@@ -1,0 +1,31 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Hero Section */
+header {
+    background-color: #111;
+    color: white;
+    padding: 60px 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0077ff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0055CC;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+}
