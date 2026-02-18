@@ -12,39 +12,80 @@
 <body>
     
     <!-- Hero Section -->
-    <header>
-        <h1>Go with Flo Tech_Solutions</h1>
-        <p>Clean Websites. Real Results. No Tech Headaches.</p>
-        <button>Work With Me</button>
+    <header class="navbar">
+        <div class="logo">Go With Flo</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Flo</h2>
-        <p>I'm Luis Flores, a U.S. Air Force veteran and full-stack developer helping small businesses build modern, high-performing websites.</p>
+    <section class="hero">
+        <h1>Clean Websites. Real Results.</h1>
+        <p>I build modern, high-performing websites for small businesses.</p>
+        <a href="#contact" class="btn">Work With Me</a>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I'm Luis Flores, a U.S. veteran and full-stack developer.
+            I help small businesses build clean, high-converting websites without the tech headaches.
+        </p>
+    </section>
+
+    <section id="services" class="section dark">
         <h2>My Services</h2>
-            <ul>
-                <li>Custom Website Design & Development</li>
-                <li>Platform Setup & Optimization (WordPress, Shopify, Wix, Squarespace, etc)</li>
-                <li>Website Maintenance & Ongoing Support</li>
-            </ul>
-    </section> 
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message"></textarea>
-                <button type="Submit">Send Message</button>
-            </form>
+        <div class="cards">
+            <div class="card">
+                <h3>Custom Development</h3>
+                <p>Fully coded websites built for speed and performance.</p>
+            </div>
+            <div class="card">
+                <h3>Platform Optimization</h3>
+                <p>Shopify, WordPress, Wix setup and improvements.</p>
+            </div>
+            <div class="card">
+                <h3>Maintenance</h3>
+                <p>Ongoing updates, security, and performance monitoring.</p>
+            </div>
+        </div>
     </section>
 
+    <section id="portfolio" class="section">
+        <h2>Recent Work</h2>
+        <div class="portfolio-grid">
+            <div class="project">
+                <img src="https://via.placeholder.com/400x250" alt="Project 1">
+                <h3>Project Name</h3>
+                <p>Short description of what I improved.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/400x250" alt="Project 2">
+                <h3>Project Name</h3>
+                <p>Short description of what I improved.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section dark">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Go With Flo Tech_Solutions | Veteran Owned</p>
+    </footer>
+      
     <!-- Link to JavaScript -->
     <script src="script.js"></script>
 
