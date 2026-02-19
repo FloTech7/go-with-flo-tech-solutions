@@ -5,89 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Go with Flo Tech_Solutions</title>
-
-    <!-- Link to CSS -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <!-- Hero Section -->
-    <header class="navbar">
-        <div class="logo">Go With Flo</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container header-container">
+            <h1 class="logo">Go With Flo Tech</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why">Why Choose Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
-        <h1>Clean Websites. Real Results.</h1>
-        <p>I build modern, high-performing websites for small businesses.</p>
-        <a href="#contact" class="btn">Work With Me</a>
+    <!-- Hero Section -->
+    <section class="hero reveal" id="home">
+        <div class="hero-content">
+            <h2>Building Modern Websites & Apps</h2>
+            <p>Your tech solution, crafted with care and skill.</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
     </section>
 
-    <section id="about" class="section">
+    <!-- About Section -->
+    <section class="about reveal" id="about">
         <h2>About Me</h2>
-        <p>
-            I'm Luis Flores, a U.S. veteran and full-stack developer.
-            I help small businesses build clean, high-converting websites without the tech headaches.
-        </p>
+        <p>I'm Flo, a full-stack developer and veteran. I create websites and apps that are modern, responsive, and user-friendly.</p>
     </section>
 
-    <section id="services" class="section dark">
+    <!-- Services Section -->
+    <section class="section reveal" id="services">
         <h2>My Services</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Custom Development</h3>
-                <p>Fully coded websites built for speed and performance.</p>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Custom websites built for performance, speed, and style.</p>
             </div>
-            <div class="card">
+            <div class="service-card">
                 <h3>Platform Optimization</h3>
                 <p>Shopify, WordPress, Wix setup and improvements.</p>
             </div>
-            <div class="card">
+            <div class="service-card">
                 <h3>Maintenance</h3>
-                <p>Ongoing updates, security, and performance monitoring.</p>
+                <p>Ongoing updates, security, and tech guidance/solutions.</p>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="section">
-        <h2>Recent Work</h2>
-        <div class="portfolio-grid">
-            <div class="project">
-                <img src="https://via.placeholder.com/400x250" alt="Project 1">
-                <h3>Project Name</h3>
-                <p>Short description of what I improved.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/400x250" alt="Project 2">
-                <h3>Project Name</h3>
-                <p>Short description of what I improved.</p>
-            </div>
-        </div>
-    </section>
+<!-- Why Choose Me -->
+    <section class="why reveal" id="why">
+        <h2>Why Choose Me</h2>
+        <ul>
+            <li>Veteran-Owned & Trustworthy</li>
+            <li>Real-World Experience</li>
+            <li>Fast & Responsive Support</li>
+        </ul>
+    <section>
 
-    <section id="contact" class="section dark">
+<!-- Contact Section -->
+    <section class="contact reveal" id="contact">
         <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
             <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Go With Flo Tech_Solutions | Veteran Owned</p>
+        <p>&copy; 2026 Go With Flo Tech_Solutions | All Rights Reserved</p>
     </footer>
       
     <!-- Link to JavaScript -->
     <script src="script.js"></script>
-
 </body>
 </html>
