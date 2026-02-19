@@ -1,15 +1,15 @@
 :root {
-    --primary: #0f172a;
-    --accent: #2563eb;
-    --accent-hover: #1d4ed8;
-    --light: #f8fafc;
-    --gray: #64748b;
-    --border: #e2e8fe;
+    --primary: #111827;
+    --secondary: #6b7280;
+    --accent: #e11d48;
+    --accent-hover: #be123c;
+    --light: #ffffff;
+    --bg-gradient: linear-gradient(to bottom, #f3f4f6, #ffffff);
 
-    --radius: 12px;
-    --shadow-sm: 0 2px 8px rgba(0,0,0,0.5);
-    --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
-    --shadow-lg: 0 20px 40px rgba(0,0,0,0.1);
+    --radius: 14px;
+    --shadow-sm: 0 4px 12px rgba(0,0,0,0.05);
+    --shadow-md: 0 10px 30px rgba(0,0,0,0.08);
+    --shadow-lg: 0 20px 50px rgba(0,0,0,0.12);
 }
 
 
@@ -70,18 +70,22 @@ header nav {
 section {
     padding: 100px 8%;
 }
+
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42,0.7)), url('hero-bg.jpg') center/cover no-repeat;
-}
+    background: var(--bg-gradient);
+    padding-top: 120px;
 
 .hero h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--primary);
+    max-width: 800px;
+    margin: 0 auto 20px auto;
 }
 
 .hero p {
@@ -92,17 +96,18 @@ section {
 .btn {
     display: inline-block;
     background: var(--accent);
-    padding: 14px 28px;
+    padding: 14px 32px;
     color: white;
     box-shadow: var(shadow-sm);
     border-radius: var(--radius);
     transition: all 0.3s ease;
     font-weight: 600;
+    border: none;
 }
 
 .btn:hover {
     background: var(--accent-hover);
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-md);
 }
 
@@ -127,75 +132,45 @@ section {
     box-shadow: var(--shadow-lg);
 }
 
-.dark {
-    background: #1A1A1A;
-}
 
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: #222;
-    padding: 30px;
-    border-radius: 10px;
-    width: 280px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.portfolio-grid {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-.project {
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    width: 350px;
-}
-
-.project img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
+/* Contact Form */
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     max-width: 500px;
-    margin: 40px auto 0 auto;
+    margin: auto;
 }
 
 input, textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+    padding: 14px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    font-size: 1rem;
 }
 
 textarea {
-    height: 120px;
+    resize: vertical;
 }
 
+/* Footer */
 footer {
-    background: black;
     text-align: center;
-    padding: 20px;
+    padding: 40px 0;
+    background: var(--primary);
+    color: white;
 }
 
+/* Scroll Reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
